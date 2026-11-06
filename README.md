@@ -102,7 +102,7 @@ These 8 are the dataset's sports movements (throwing, shooting, swinging, striki
 
   Pose alone is enough for bowling, basketball_shoot and baseball_swing, and either modality alone handles boxing.
 - **Errors concentrate in one subject and are low-confidence.** The production model misclassifies 7 of 96 test trials, and subject 7 accounts for 4 of them (tennis_forehand predicted as bowling twice, catch predicted as throw twice). No error has a confidence above 0.51, and in every error the true action is the runner-up. Throw and catch, which are mirror-image movements, account for 4 of the 7 errors.
-- **The modalities make complementary errors.** Pooled over seeds, IMU-only most often confuses throw with basketball_shoot, while pose-only confuses it with catch. For catch the confusions are boxing (IMU) versus throw (pose), and for tennis_serve, boxing versus tennis_forehand. Our interpretation, which the experiment does not isolate: the wrist IMU captures arm dynamics but misses body configuration, while pose captures whole-body shape but sees fast wrist motion only coarsely at 15 fps.
+- **The modalities make complementary errors.** Pooled over seeds, IMU-only most often confuses throw with basketball_shoot, while pose-only confuses it with catch. For catch the confusions are boxing (IMU) versus throw (pose), and for tennis_serve, boxing versus tennis_forehand. My interpretation, which the experiment does not isolate: the wrist IMU captures arm dynamics but misses body configuration, while pose captures whole-body shape but sees fast wrist motion only coarsely at 15 fps.
 
 ## Reproduction
 
