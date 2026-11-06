@@ -1,0 +1,14 @@
+# Data (downloaded / generated; see setup_data.py)
+data/
+data/pose_cache/
+data/models/
+
+# Generated results (see scripts/generate_report.py)
+results/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
